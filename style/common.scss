@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+// COLORS
+$red: #8d1a3d;
+$text: #0b0c1c;
+$black: #000000;
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+a {
+    text-decoration: none;
+    transition: 0.5s ease;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+ul {
+    list-style: none;
+}
+p,
+span,
+ul li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    transition: 0.5s ease-in-out;
+    margin: 0;
+}
+
+// OFFERS
+.offers {
+    .row.display-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .row.display-flex > [class*="col-"] {
+        flex-grow: 1;
+    }
+    .title {
+        margin: 20px 0;
+        h1 {
+            font-weight: 500;
+            font-size: 30px;
+            color: #333333;
+            text-align: center;
+        }
+    }
+    .border {
+        border: 1px solid #bfbfbf;
+    }
+    .col-sm-6 {
+        margin-bottom: 30px;
+    }
+    &__card {
+        position: relative;
+        height: 100%;
+        &-img {
+            width: 100%;
+            height: 160px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-info {
+            padding: 15px 15px 10px 15px;
+            h3 {
+                font-size: 16px;
+                font-weight: 600;
+                color: #0b0c1c;
+            }
+            span {
+                font-size: 12px;
+                color: #0b0c1c;
+                font-weight: 400;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 600;
+                color: $red;
+                margin-top: 5px;
+            }
+            .btn-wrap {
+                text-align: center;
+                margin-top: 20px;
+            }
+            button {
+                text-align: center;
+                background: $black;
+                color: white;
+                padding: 5px 50px;
+                font-size: 14px;
+                font-weight: 300;
+            }
+            button:hover {
+                color: white;
+            }
+        }
+        .category {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: $red;
+            padding: 5px 10px;
+            h4 {
+                font-size: 14px;
+                font-weight: 400;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+// OFFER INNER PAGE
+.offer-inner {
+    margin-top: 20px;
+    &__img {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__details {
+        .category {
+            margin-bottom: 10px;
+            background: $red;
+            display: inline-block;
+            padding: 5px 10px;
+            h4 {
+                font-size: 14px;
+                font-weight: 400;
+                color: #ffffff;
+            }
+        }
+        h1 {
+            color: #333333;
+            font-size: 30px;
+            font-weight: 400;
+        }
+        h5 {
+            font-size: 14px;
+            color: #0b0c1c;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 14px;
+            color: $text;
+            margin-bottom: 10px;
+        }
+        span {
+            color: #0b0c1c;
+            opacity: 0.7;
+            font-size: 12px;
+        }
+        .expire {
+            margin: 10px 0;
+            svg {
+                margin-right: 5px;
+            }
+            p {
+                margin: 0;
+                font-size: 14px;
+                font-weight: 600;
+                color: $red;
+            }
+            span {
+                margin-left: 20px;
+                color: #0b0c1c;
+                opacity: 0.7;
+            }
+        }
+        .btn-wrap {
+            button {
+                text-align: center;
+                background: $black;
+                color: white;
+                padding: 5px 30px;
+                font-size: 14px;
+                font-weight: 300;
+            }
+            button:hover {
+                color: white;
+            }
+            span {
+                margin-left: 10px;
+            }
+        }
+    }
+    .title {
+        margin: 35px 0 20px 0;
+        h2 {
+            color: #333333;
+            font-size: 24px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .offer-inner {
+        &__details {
+            margin-top: 20px;
+        }
+    }
+}
+
+// EVENTS
+.events {
+    .row.display-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .row.display-flex > [class*="col-"] {
+        flex-grow: 1;
+    }
+    .title {
+        margin: 20px 0;
+        h1 {
+            font-weight: 500;
+            font-size: 30px;
+            color: #333333;
+            text-align: center;
+        }
+    }
+    .border {
+        border: 1px solid #bfbfbf;
+    }
+    .col-sm-6 {
+        margin-bottom: 30px;
+    }
+    &__card {
+        height: 100%;
+        &-img {
+            width: 100%;
+            height: 160px;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .date {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: $red;
+            padding: 5px 10px;
+            h4 {
+                font-size: 14px;
+                font-weight: 400;
+                color: #ffffff;
+            }
+        }
+        &-info {
+            padding: 15px 15px 10px 15px;
+            h3 {
+                font-size: 16px;
+                font-weight: 600;
+                color: #0b0c1c;
+            }
+            span {
+                font-size: 12px;
+                color: #0b0c1c;
+                font-weight: 400;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 600;
+                color: $red;
+                margin-top: 5px;
+            }
+            .btn-wrap {
+                text-align: center;
+                margin-top: 20px;
+            }
+            button {
+                text-align: center;
+                background: $black;
+                color: white;
+                padding: 5px 40px;
+                font-size: 14px;
+                font-weight: 300;
+            }
+            button:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+// EVENTS INNER PAGE
+.event-inner {
+    margin: 20px 0;
+    &__coverImg {
+        height: 300px;
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__title-wrapper {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        .title {
+            h1 {
+                font-size: 30px;
+                color: #333333;
+                font-weight: 500;
+            }
+            span {
+                color: #0b0c1c;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            .date {
+                margin-top: 5px;
+                p {
+                    background: $red;
+                    color: #ffffff;
+                    padding: 5px;
+                    font-size: 14px;
+                    display: inline-block;
+                }
+            }
+        }
+        .btn-wrap {
+            button {
+                background: $black;
+                color: #ffffff;
+                padding: 8px 30px;
+                font-size: 14px;
+                font-size: 400;
+            }
+        }
+    }
+    &__body {
+        margin-top: 20px;
+        p {
+            color: $text;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+    &__related-events {
+        h3 {
+            color: #333333;
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .event-inner {
+        &__title-wrapper {
+            flex-direction: column;
+            .btn-wrap {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 20px;
+            }
+        }
+    }
+}
