@@ -46,6 +46,55 @@ h6 {
   margin: 0;
 }
 
+.simple-pagination ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.simple-pagination li {
+  display: inline-block;
+  margin: 2px;
+}
+
+.simple-pagination li a,
+.simple-pagination li span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: none;
+  color: #8d1a3d;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.simple-pagination li a:hover,
+.simple-pagination li span:hover {
+  background: none;
+}
+
+.simple-pagination .current {
+  background-color: #8d1a3d;
+  color: #ffffff;
+}
+
+.simple-pagination .current:hover {
+  background-color: #8d1a3d;
+  color: #ffffff;
+}
+
+.simple-pagination .prev.current,
+.simple-pagination .next.current {
+  background: none;
+  color: #8d1a3d;
+}
+
 .offers .row.display-flex {
   display: -webkit-box;
   display: -ms-flexbox;
